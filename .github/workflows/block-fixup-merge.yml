@@ -1,0 +1,12 @@
+name: Block Fixup Commit Merge
+
+on:
+  - pull_request
+
+jobs:
+  block-fixup-commit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Prevents fixup-commits from being merged
+        uses: 13rac1/block-fixup-merge-action@v2.0.0
