@@ -12,6 +12,7 @@
     "build": "tsc",
     "coveralls": "NODE_ENV=test jest .test.ts --coverage && coveralls < coverage/lcov.info",
     "dev": "nodemon",
+    "generate:proto:types": "cd scripts && ./generate-ts-types-from-proto.sh",
     "license-check": "license-checker --summary --failOn 'AGPL-3.0;EPL-1.0;GPL-1.0-or-later;GPL-2.0-or-later;GPL-3.0-or-later;LGPL-2.0+;LGPL-2.1+;LGPL-3.0-or-later;LGPL-3.0+;MPL-1.0;MPL-1.1;MPL-2.0;MS-RL;NGPL;ODbL-1.0;OSL-3.0;RPL-1.1;RPL-1.5;RPSL-1.0' --production",
     "lint": "eslint . --cache --ext .ts --max-warnings 0",
     "lint:fix": "eslint . --cache --ext .ts --fix",
