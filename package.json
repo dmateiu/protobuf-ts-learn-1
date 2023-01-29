@@ -19,6 +19,7 @@
     "prepare": "husky install",
     "release": "standard-version",
     "start": "node dist/index.js",
+    "start:server": "node dist/server/index.js",
     "test": "npm run test:unit && npm run test:integration",
     "test:unit": "NODE_ENV=test jest .test.ts",
     "test:integration": "NODE_ENV=test jest .it.ts --passWithNoTests",
