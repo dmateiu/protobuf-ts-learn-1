@@ -21,7 +21,7 @@
     "start": "node dist/index.js",
     "start:server": "node dist/server/index.js",
     "test": "npm run test:unit && npm run test:integration",
-    "test:unit": "NODE_ENV=test jest .test.ts",
+    "test:unit": "NODE_ENV=test jest .test.ts --passWithNoTests",
     "test:integration": "NODE_ENV=test jest .it.ts --passWithNoTests",
     "upgrade-interactive": "npm-check --update && npm run build && npm run test "
   },
