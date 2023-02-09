@@ -1,6 +1,6 @@
 {
   "name": "@dmateiu/protobuf-ts-learn-1",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "This is a learning project for learning how to use protobuf in a nodejs project",
   "license": "UNLICENSED",
   "engines": {
